@@ -1,5 +1,6 @@
 {
   "name": "vue-tooltip",
+  "version": "0.0.1",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/vue-tooltip.umd.cjs",
@@ -11,7 +12,6 @@
     },
     "./style.css": "./dist/style.css"
   },
-  "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build && npm run generate:types",
