@@ -3,12 +3,10 @@ import { defu } from "defu";
 import { hideAll } from "tippy.js";
 export const tooltipOptionsInject = Symbol();
 import type { App } from "vue";
-import type { Props } from "tippy.js";
+import type { PluginsOptions } from "./types";
 
-interface PluginsOptions extends Partial<Props> {}
-
-export function createToolTipPlugin(options: PluginsOptions) {
-  return (app: any) => {
+export function createToolTipPlugin(options: PluginsOptions = {}) {
+  return (app: App) => {
     options = defu(options, {
       arrow: false,
     });

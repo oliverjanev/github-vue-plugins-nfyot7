@@ -8,7 +8,7 @@ import { resolve } from "path";
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, "lib/main.js"),
+      entry: resolve(__dirname, "./src/toolTipPlugin/index.ts"),
       name: "vue-tooltip",
       fileName: "vue-tooltip",
     },
